@@ -1,124 +1,111 @@
-#controls-container 
-{
-    width:300px;
-    height:270px;
-    position: relative;
-    text-align: center;
+#controls-container {
+  height: 270px;
+  position: relative;
+  text-align: center;
+  width: 300px;
 }
 
-#display 
-{
-    width:160px; 
-    height:40px; 
-    background-color: var(--color-1);
-    top:80px;
-    position: relative;
-    margin: auto;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 3px;
-    transition: opacity 0.3s ease;
-}
-#display.off
-{
-    opacity:0.6;
+#display {
+  align-items: center;
+  background-color: var(--color-1);
+  border-radius: 3px;
+  color: #fff;
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+  height: 40px;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  top: 80px;
+  transition: opacity 0.3s ease;
+  width: 160px;
 }
 
-#volume-range 
-{
-    position: absolute;
-    bottom:0;
-    width:100%;
-    transition: opacity 0.3s ease;
+#display.off {
+  opacity: 0.6;
 }
 
-
-#volume-range.off 
-{
-    opacity:0.6;
+#volume-range {
+  bottom: 0;
+  position: absolute;
+  transition: opacity 0.3s ease;
+  width: 100%;
 }
 
-#volume-range .status
-{
-    display: flex;
-    justify-content: space-between;
-    width:250px;
-    margin: 0 auto 10px auto;
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--color-1);
+#volume-range.off {
+  opacity: 0.6;
 }
 
-#volume-range .range
-{
-    width:270px;
-    margin: auto;
-    background-color: var(--color-1);
-    appearance: none;
-    -webkit-appearance: none;
-    border-radius: 3px;
-    overflow: hidden;
-    outline: none;
+#volume-range .status {
+  color: var(--color-1);
+  display: flex;
+  font-size: 18px;
+  font-weight: 600;
+  justify-content: space-between;
+  margin: 0 auto 10px auto;
+  width: 250px;
 }
 
-#volume-range .range::-webkit-slider-thumb
-{    
-    -webkit-appearance: none;  
-    appearance: none; 
-    width: 10px; 
-    height: 20px; 
-    background: #fff; 
-    cursor: pointer;
+#volume-range .range {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--color-1);
+  border-radius: 3px;
+  margin: auto;
+  outline: none;
+  overflow: hidden;
+  width: 270px;
 }
 
-#volume-range .range::-moz-slider-thumb
-{    
-    -webkit-appearance: none;  
-    appearance: none; 
-    width: 10px; 
-    height: 20px; 
-    background: #fff; 
-    cursor: pointer;
+#volume-range .range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #fff;
+  cursor: pointer;
+  height: 20px;
+  width: 10px;
 }
 
-#button-on-off 
-{
-    width: 100%;
-    height:20px;
+#volume-range .range::-moz-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #fff;
+  cursor: pointer;
+  height: 20px;
+  width: 10px;
 }
 
-#button-on-off.on > .btn .mark
-{
-    opacity:1;
-    left:20px;
+#button-on-off {
+  height: 20px;
+  width: 100%;
 }
 
-#button-on-off .btn
-{
-    width:40px;
-    height:20px; 
-    background-color: var(--color-1);
-    border-radius: 100px;
-    position: relative;
-    float:right;
-    cursor: pointer;
-    top:10px;
-    right:10px;
+#button-on-off.on > .btn .mark {
+  left: 20px;
+  opacity: 1;
 }
 
-#button-on-off .btn .mark
-{
-    width:20px;
-    height:20px;
-    border-radius: 100px;
-    background-color: #fff;
-    position: absolute;
-    left:0;
-    top:0;
-    opacity: 0.6;
-    transition: left 0.3s ease,opacity 0.3s ease;
+#button-on-off .btn {
+  background-color: var(--color-1);
+  border-radius: 100px;
+  cursor: pointer;
+  float: right;
+  height: 20px;
+  position: relative;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+}
+
+#button-on-off .btn .mark {
+  background-color: #fff;
+  border-radius: 100px;
+  height: 20px;
+  left: 0;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  transition: left 0.3s ease, opacity 0.3s ease;
+  width: 20px;
 }
