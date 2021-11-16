@@ -85,7 +85,7 @@ export default class DrumPad extends React.Component
                                             <audio 
                                             id={button.key} 
                                             className="clip" 
-                                            src={process.env.PUBLIC_URL+"/src/assets/audio/"+button.audio}>
+                                            src={process.env.PUBLIC_URL+"audio/"+button.audio}>
                                             </audio>
                                         </div>
                                     )
